@@ -1,3 +1,6 @@
 .nav{
     height: 200px;
 }
+.nav.menu{
+    list-style-type: none;
+}

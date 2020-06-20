@@ -1,32 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="">
-    <title>Projekt</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-    <div class="nav">
-        <ul class="nav.list">
-            <li class="menu">
-                <a href="index.html"><img src="assets/icon.jpg" alt=""></a>
-            </li>
-            <li class="menu">
-                <a href="podstrona1.html">Podstrona 1</a>
-            </li>
-            <li class="menu">
-                <a href="podstrona2.html">Podstrona 2</a>
-            </li>
-            <li class="menu">
-                <a href="podstrona3.html">Podstrona 3</a>
-            </li>
-            <li class="menu">
-                <a href="podstrona4.html">Podstrona 4</a>
-            </li>
-        </ul>
-    </div>
+<body  style="background-image: url('assets/landscape.jpg')">
+	<div class="container-fluid">	
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		  <a class="navbar-brand" href="index.html"><img src="assets/hamburger.png" alt="" height="60px"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbar">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="podstrona1.html">
+                    Podstrona 1
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=32 height=32 viewBox="0 0 32 32" {...props}>
+                        <path d="M16 24c-6.996 0-12.979-6.305-14.46-8 1.481-1.695 7.464-8 14.46-8s12.979 6.305 14.46 8c-1.481 1.695-7.464 8-14.46 8zM31.856 15.585c-0.288-0.363-7.164-8.919-15.856-8.919s-15.568 8.556-15.856 8.919c-0.192 0.244-0.192 0.585 0 0.829 0.288 0.363 7.164 8.919 15.856 8.919s15.568-8.556 15.856-8.919c0.192-0.244 0.192-0.585 0-0.829zM16 20.667c-2.573 0-4.667-2.093-4.667-4.667s2.093-4.667 4.667-4.667c2.573 0 4.667 2.093 4.667 4.667s-2.093 4.667-4.667 4.667zM16 10c-3.308 0-6 2.692-6 6s2.692 6 6 6c3.308 0 6-2.692 6-6s-2.692-6-6-6zM16 12.667c-0.368 0-0.667 0.299-0.667 0.667s0.299 0.667 0.667 0.667c1.103 0 2 0.897 2 2s-0.897 2-2 2c-1.103 0-2-0.897-2-2 0-0.368-0.299-0.667-0.667-0.667s-0.667 0.299-0.667 0.667c0 1.837 1.496 3.333 3.333 3.333s3.333-1.496 3.333-3.333c0-1.837-1.496-3.333-3.333-3.333z"></path>
+                    </svg>
+                    <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="podstrona2.html">
+                    Podstrona 2
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=20 height=20 viewBox="0 0 32 32" {...props}>
+                        <path d="M38.123 5.333h-2.908l-1.588-3.159c-0.933-1.401-2.144-2.174-3.404-2.174h-8.889c-1.26 0-2.471 0.773-3.378 2.133l-2.4 3.2h-4.889v-0.889c0-1.42-1.292-2.667-2.766-2.667h-1.678c-1.394 0-2.617 1.246-2.617 2.642l-0.027 0.98c-2.908 0.325-3.579 2.24-3.579 3.886v18.469c0 2.697 1.657 4.245 4.544 4.245h33.58c2.885 0 4.542-1.548 4.542-4.247v-18.468c0-1.803-0.788-3.952-4.544-3.952zM6.222 3.556h1.678c0.491 0 0.988 0.448 0.988 0.889v0.889h-3.531l0.025-0.889c0-0.448 0.416-0.889 0.839-0.889zM40.889 27.753c0 1.707-0.853 2.469-2.766 2.469h-33.579c-1.913 0-2.766-0.763-2.766-2.469v-18.468c0-1.305 0.453-2.174 2.667-2.174h12l2.962-3.952c0.345-0.516 1.052-1.381 1.927-1.381h8.889c0.875 0 1.584 0.866 1.872 1.287l2.023 4.046h4.005c2.553 0 2.766 1.074 2.766 2.174v18.468zM25.778 7.111c-5.883 0-10.667 4.784-10.667 10.667s4.784 10.667 10.667 10.667 10.667-4.784 10.667-10.667-4.784-10.667-10.667-10.667zM25.778 26.667c-4.901 0-8.889-3.988-8.889-8.889s3.988-8.889 8.889-8.889 8.889 3.988 8.889 8.889-3.988 8.889-8.889 8.889zM25.778 11.556c-3.431 0-6.222 2.791-6.222 6.222s2.791 6.222 6.222 6.222 6.222-2.791 6.222-6.222-2.791-6.222-6.222-6.222zM25.778 22.222c-2.452 0-4.444-1.993-4.444-4.444s1.993-4.444 4.444-4.444 4.444 1.993 4.444 4.444-1.993 4.444-4.444 4.444zM7.111 8.889c-1.961 0-3.556 1.595-3.556 3.556s1.595 3.556 3.556 3.556 3.556-1.595 3.556-3.556-1.595-3.556-3.556-3.556zM7.111 14.222c-0.98 0-1.778-0.796-1.778-1.778s0.798-1.778 1.778-1.778 1.778 0.796 1.778 1.778-0.798 1.778-1.778 1.778z"></path>
+                    </svg>
+                </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="podstrona3.html">
+                    Podstrona 3 
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=20 height=20 viewBox="0 0 32 32" {...props}>
+                        <path d="M26.035 13.976c-0.369 0-0.668 0.299-0.668 0.668v16.021h-24.032v-26.702h20.694c0.369 0 0.668-0.299 0.668-0.668s-0.299-0.668-0.668-0.668h-21.362c-0.368 0-0.668 0.299-0.668 0.668v28.037c0 0.369 0.299 0.668 0.668 0.668h25.367c0.369 0 0.668-0.299 0.668-0.668v-16.689c0-0.368-0.299-0.668-0.668-0.668zM31.895 1.259c-0.529-1.275-2.271-1.713-3.29-0.696l-12.745 12.745c-0.051 0.051-0.093 0.109-0.126 0.174l-1.888 3.777c-0.128 0.256-0.079 0.567 0.126 0.77 0.128 0.13 0.299 0.195 0.473 0.195 0.101 0 0.203-0.023 0.299-0.071l3.777-1.889c0.063-0.031 0.123-0.073 0.172-0.125l12.746-12.745c0.591-0.591 0.762-1.391 0.455-2.135zM17.825 15.12l-1.888 0.944 0.944-1.888 10.308-10.308 0.944 0.945-10.308 10.307zM30.494 2.451l-1.418 1.417-0.944-0.945 1.417-1.417c0.379-0.379 0.929-0.171 1.112 0.264 0.099 0.242 0.043 0.47-0.167 0.681z"></path>
+                    </svg>
+                </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="podstrona4.html">
+                    Podstrona 4
+                    <svg width=20 height=20 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" {...props}>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 2.5C1.94036 2.5 2.5 1.94036 2.5 1.25C2.5 0.559644 1.94036 0 1.25 0C0.559644 0 0 0.559644 0 1.25C0 1.94036 0.559644 2.5 1.25 2.5Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4167 2.5C11.1071 2.5 11.6667 1.94036 11.6667 1.25C11.6667 0.559644 11.1071 0 10.4167 0C9.72639 0 9.16675 0.559644 9.16675 1.25C9.16675 1.94036 9.72639 2.5 10.4167 2.5Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 2.5C19.4404 2.5 20 1.94036 20 1.25C20 0.559644 19.4404 0 18.75 0C18.0596 0 17.5 0.559644 17.5 1.25C17.5 1.94036 18.0596 2.5 18.75 2.5Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 10.8334C19.4404 10.8334 20 10.2737 20 9.58337C20 8.89302 19.4404 8.33337 18.75 8.33337C18.0596 8.33337 17.5 8.89302 17.5 9.58337C17.5 10.2737 18.0596 10.8334 18.75 10.8334Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 20C19.4404 20 20 19.4404 20 18.75C20 18.0596 19.4404 17.5 18.75 17.5C18.0596 17.5 17.5 18.0596 17.5 18.75C17.5 19.4404 18.0596 20 18.75 20Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4167 20C11.1071 20 11.6667 19.4404 11.6667 18.75C11.6667 18.0596 11.1071 17.5 10.4167 17.5C9.72639 17.5 9.16675 18.0596 9.16675 18.75C9.16675 19.4404 9.72639 20 10.4167 20Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4167 10.8334C11.1071 10.8334 11.6667 10.2737 11.6667 9.58337C11.6667 8.89302 11.1071 8.33337 10.4167 8.33337C9.72639 8.33337 9.16675 8.89302 9.16675 9.58337C9.16675 10.2737 9.72639 10.8334 10.4167 10.8334Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 10.8334C1.94036 10.8334 2.5 10.2737 2.5 9.58337C2.5 8.89302 1.94036 8.33337 1.25 8.33337C0.559644 8.33337 0 8.89302 0 9.58337C0 10.2737 0.559644 10.8334 1.25 10.8334Z" fill="#232C47"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 20C1.94036 20 2.5 19.4404 2.5 18.75C2.5 18.0596 1.94036 17.5 1.25 17.5C0.559644 17.5 0 18.0596 0 18.75C0 19.4404 0.559644 20 1.25 20Z" fill="#232C47"/>
+                    </svg>
+                </a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <button class="btn btn-sm btn-outline-dark my-2 my-sm-0" type="submit">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=32 height=32 viewBox="0 0 32 32" {...props}>
+                        <path d="M9.309 31.955h-6.206v-15.978h-3.103v-5.512h3.103v-3.308c0-4.489 1.751-7.157 6.724-7.157h4.145v5.503h-2.589c-1.94 0-2.066 0.773-2.066 2.209l-0.009 2.754h4.691l-0.551 5.512h-4.14v15.978z"></path>
+                    </svg>
+                </button>
+                <button class="btn btn-sm btn-outline-dark my-2 my-sm-0" type="submit">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=32 height=32 viewBox="0 0 32 32" {...props}>
+                        <path d="M29.42 27.374h-26.841c-1.422 0-2.58-1.157-2.58-2.58v-17.59c0-1.423 1.158-2.58 2.58-2.58h26.841c1.422 0 2.58 1.157 2.58 2.58v17.59c0 1.423-1.158 2.58-2.58 2.58zM2.58 5.657c-0.853 0-1.548 0.694-1.548 1.548v17.59c0 0.853 0.694 1.548 1.548 1.548h26.841c0.853 0 1.548-0.694 1.548-1.548v-17.59c0-0.853-0.694-1.548-1.548-1.548h-26.841zM16 18.592c-0.686 0-1.372-0.228-1.895-0.683l-13.186-11.492c-0.215-0.188-0.237-0.513-0.050-0.727 0.188-0.217 0.514-0.237 0.729-0.051l13.185 11.492c0.66 0.575 1.775 0.574 2.433 0l13.182-11.491c0.214-0.189 0.539-0.167 0.729 0.051 0.188 0.215 0.165 0.54-0.050 0.727l-13.183 11.49c-0.522 0.456-1.208 0.684-1.895 0.684z"></path>
+                    </svg>
+                </button>
+		    </form>
+		  </div>
+		</nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img id="sample" src="assets/sample.jpg" alt="">
+            </div>
+            </div>
+        </div>
+	</div>
 </body>
 </html>
